@@ -8,6 +8,9 @@ import SingUp from './Components/SignUp-SingIn/SignUp';
 function App() {
   return (
     <div className="App">
+      <main>
+
+  
       <Navbar />
 
       <Routes>
@@ -18,6 +21,7 @@ function App() {
         <Route path='/profile' element= {<h1> add probile components</h1>} />
         <Route path='/signup' element= {<SingUp />} />
       </Routes>
+      </main>
       <Footer />
     </div>
   );

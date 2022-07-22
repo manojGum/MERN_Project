@@ -15,3 +15,7 @@ padding: 10px;
 .nav-ul li a:hover{
     color: antiquewhite;
 }
+.main-nav-cont{
+    display: flex;
+    
+}
