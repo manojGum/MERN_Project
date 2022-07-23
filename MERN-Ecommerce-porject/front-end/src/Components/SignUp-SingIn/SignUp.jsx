@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './SignUp.css'
@@ -10,6 +10,13 @@ const SingUp=()=>{
     const [repassword,setRepassword]=useState("")
 // it used to navigate or redirect to another pages
     const navigate=useNavigate();
+    useEffect(()=>{
+        const auth=localStorage.getItem('user');
+        if(auth){
+            navigate("/")
+        }
+        
+    })
     // const nameHandel=(event)=>{
     //     setName(event.target.value)
     //     console.log(name)
@@ -32,7 +39,10 @@ const SingUp=()=>{
         setEmail("");
         if(result)
         {
+            // it data save into localStorage afet that page redirect to the product pages
+            localStorage.setItem("user",JSON.stringify(result));
             navigate("/")
+            // privateComponents are
 
         }
     }
