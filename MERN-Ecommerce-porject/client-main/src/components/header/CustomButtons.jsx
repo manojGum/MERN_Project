@@ -31,9 +31,10 @@ margin-top:5px
 const CustomButtons=()=>{
     return(
         <Wrapper>
-          <LoginButton variant="containt">Login</LoginButton>
+          <LoginButton variant="containt"> Login</LoginButton>
           <Typography style={{marginTop:5, width:"135px"}}>Become a Seller</Typography>
           <Typography  style={{marginTop:5}}>More</Typography>
+          
           <Cartwraper>
             <Typography>Cart</Typography>
             < ShoppingCartIcon />

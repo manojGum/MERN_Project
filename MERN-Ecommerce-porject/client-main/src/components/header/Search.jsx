@@ -17,6 +17,7 @@ font-size:unset;
 const SearchIconrapper=styled(Box)`
 color:gray;
 padding-top:5px;
+display:flex;
 `;
 
 
@@ -24,9 +25,7 @@ const Search = () => {
   return (
 
     <SearchContainer>
-        <InputSearchBase
-         placeholder="Search for Products , brands and more"
-         />
+        <InputSearchBase placeholder="Search for Products , brands and more"/>
          <SearchIconrapper>
          
          <SearchIcon />
